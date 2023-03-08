@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+        <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <section>
         <nav>
-            <img src="./Assets/FES.svg" alt="">
+            <img src="./Assets/FES.svg" class="logo" alt="">
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#discord">Discord</a></li>
@@ -18,57 +20,70 @@
             </ul>
         </nav>
         <header>
+            <div class="row">            
             <div>
                 <h1>Best Place to Learn Frontend</h1>
-                <p>Go from being an absolute beginner to pro with a simplified process</p>
+                <p class="subheader">Go from being an absolute beginner to pro with a simplified process</p>
                 <button>Start Now</button>
             </div>
             <figure>
                 <img src="./Assets/laptop.png" alt="Home page image">
             </figure>
+            </div>
         </header>
     </section>
 
 <main>
     <section id="about">
-        <h2>About</h2>    
-        <div>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel voluptatem, quos dolor, molestias cumque at veniam temporibus, eaque ratione nihil atque veritatis aliquam suscipit. Sint unde dignissimos suscipit aut beatae!
+        <h2>About</h2>
+        <div class="row">    
+        <div class="section__description">      
+        <div class="section__description--wrapper">
+            <p class="section__description--para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel voluptatem, quos dolor, molestias cumque at veniam temporibus, eaque ratione nihil atque veritatis aliquam suscipit. Sint unde dignissimos suscipit aut beatae!
             </p>
-            <p>
+            <p class="section__description--para">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima molestiae dolorum beatae saepe porro impedit sed corporis perferendis vel. Eveniet doloremque distinctio praesentium qui culpa obcaecati ipsum totam quisquam corrupti!
             </p>
         </div>
-        <figure>
+        <figure class="about__img--wrapper">
             <img src="./Assets/about.jpg" alt="About">
         </figure>
+        </div>
+        </div>
     </section>
     <section id="discord">
         <h2>Discord</h2>
-        <figure>
+        <div class="row">
+        <div class="section__description">
+        <figure class="about__img--wrapper">
             <img src="./Assets/discord.png" alt="Discord">
         </figure>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo voluptas commodi minima doloribus a unde, temporibus aliquid! Nulla nihil quo omnis assumenda eaque labore, aspernatur corrupti itaque laborum. Doloribus, omnis!</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse excepturi necessitatibus repudiandae repellendus nisi corporis perspiciatis ipsam sapiente harum! Temporibus repudiandae reprehenderit sit. Quaerat, nostrum maiores! Dignissimos rem officiis mollitia?</p>
+        <div class="section__description--wrapper">
+        <p class="section__description--para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo voluptas commodi minima doloribus a unde, temporibus aliquid! Nulla nihil quo omnis assumenda eaque labore, aspernatur corrupti itaque laborum. Doloribus, omnis!</p>
+        <p class="section__description--para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse excepturi necessitatibus repudiandae repellendus nisi corporis perspiciatis ipsam sapiente harum! Temporibus repudiandae reprehenderit sit. Quaerat, nostrum maiores! Dignissimos rem officiis mollitia?</p>
+        </div>
+        </div>
+        </div>
     </section>
     <section id="contact">
         <h2>Contact</h2>
-        <form action="">
-            <span>Email</span>
-            <input type="text" placeholder="jane@example.com">
-            <span>Message</span>
-            <textarea type="text" placeholder="Nice website, let's connect!">
-        </form>
+            <form action="">
+                <span>Email</span>
+                <input type="email" placeholder="jane@example.com">
+                <span>Message</span>
+                <textarea type="text" placeholder="Cool website, let's get connected!"></textarea>
+            <button>Contact Us</button>
+            </form>
     </section>
 </main>    
 
 <footer>
-    <img src="Assets/FES.svg" alt="">
-    <div>
-        <a href="#about">About</a>
-        <a href="#discord">Discord</a>
-        <a href="#contact">Contact</a>
-        <a href="#contact">Courses</a>
+    <img class="footer__logo" src="Assets/FES.svg" alt="">
+    <div class="footer__links">
+        <a class="footer__link" href="#discord">Discord</a>
+        <a class="footer__link" href="#contact">Contact</a>
+        <a class="footer__link" href="#contact">Courses</a>
+        <a class="footer__link" href="#about">About</a>
     </div>
     <p>Copyright Frontend Simplified</p>
 </footer>
